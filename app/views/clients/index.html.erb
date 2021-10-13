@@ -20,9 +20,9 @@
         <td><%= client.document %></td>
         <td><%= client.email %></td>
         <td><%= client.phone %></td>
-        <td><%= link_to 'Show', client %></td>
-        <td><%= link_to 'Edit', edit_client_path(client) %></td>
-        <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', client, class: "bt-info bt" %></td>
+        <td><%= link_to 'Edit', edit_client_path(client), class: "bt-blue bt" %></td>
+        <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' }, class: "bt-danger bt" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Client', new_client_path %>
+<%= link_to 'New Client', new_client_path, class: "bt-green bt" %>
