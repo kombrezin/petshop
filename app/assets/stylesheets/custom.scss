@@ -59,10 +59,10 @@
 
     li:hover {
         background-color: white;
-        color: black;
+        color: rgb(226, 3, 3);
         
         a {
-            color: black;
+            color: rgb(226, 3, 3);
             background-color: none;
         }
     }
@@ -71,6 +71,10 @@
 #navbar {
     grid-area: navbar;
     background-color: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
 }
 
 #content {
